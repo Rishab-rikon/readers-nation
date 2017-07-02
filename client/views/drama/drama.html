@@ -1,0 +1,27 @@
+<div class="distance">
+<div class="alert alert-info" role="alert">
+  <a href="#/drama/add" class="alert-link">Want to add a Drama to our collection?</a>
+</div>
+<div class="distance2">
+  <div class="panel panel-default" ng-init="getDramas()">
+    <div class="panel-heading">
+    <h3 class="panel-title">The Best Drama Collection</h3>
+    </div>
+    <div class="panel-body">
+    <div class="row">
+    	<div ng-repeat="drama in dramas">
+    		<div class="col-md-6">
+      			<div class="col-md-6">
+    				<h4>{{drama.title}}</h4>
+    				<p>{{drama.description}}</p>
+    				<a class="btn btn-primary" href="#/drama/drama-detail/{{drama._id}}">View Details</a>
+    			</div>
+    			<div class="col-md-6">
+      				<img class="thumbnail fit" src="{{drama.image_url}}">
+        			</div>
+    		  </div>
+    	</div>
+    </div>
+  </div>
+</div>
+</div>

@@ -1,0 +1,27 @@
+<div class="distance">
+<div class="alert alert-info" role="alert">
+  <a href="#/kid/kid-add" class="alert-link">Want to add a Kid-Book to our collection?</a>
+</div>
+<div class="distance2">
+  <div class="panel panel-default" ng-init="getKids()">
+    <div class="panel-heading">
+    <h3 class="panel-title">The Best Collection for Kids</h3>
+    </div>
+    <div class="panel-body">
+    <div class="row">
+    	<div ng-repeat="kid in kids">
+    		<div class="col-md-6">
+      			<div class="col-md-6">
+    				<h4>{{kid.title}}</h4>
+    				<p>{{kid.description}}</p>
+    				<a class="btn btn-primary" href="#/kid/kid-detail/{{kid._id}}">View Details</a>
+    			</div>
+    			<div class="col-md-6">
+      				<img class="thumbnail fit" src="{{kid.image_url}}">
+        			</div>
+    		  </div>
+    	</div>
+    </div>
+  </div>
+</div>
+</div>

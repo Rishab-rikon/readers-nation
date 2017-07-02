@@ -1,0 +1,30 @@
+<div class="distance">
+<a href="#/suspenses" class="btn btn-info" >Go Back</a>
+<div class="panel panel-default" ng-init="getSuspense()">
+  <div class="panel-heading">
+    <h3 class="panel-title">{{suspense.title}}</h3>
+  </div>
+  <div class="panel-body">
+    <div class="row">
+      <div class="col-md-4">
+        <img src="{{suspense.image_url}}">
+      </div>
+      <div class="col-md-8">
+        <p>{{suspense.description}}</p>
+        <ul class="list-group">
+          <li class="list-group-item">Genre: Thriller</li>
+          <li class="list-group-item">Author: {{suspense.author}}</li>
+          <li class="list-group-item">Publisher: {{suspense.publisher}}</li>
+          <li class="list-group-item">Pages: {{suspense.pages}}</li>
+          <li class="list-group-item">Price: &#8377; {{suspense.price}}</li>
+        </ul>
+        <a target="_blank" href="{{suspense.buy_url}}" class="btn btn-primary">Buy on Amazon</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="pull-right">
+  <a href="#/suspenses/sus-edit/{{suspense._id}}" class="btn btn-primary">Edit</a>
+</div>
+</div>

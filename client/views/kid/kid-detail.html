@@ -1,0 +1,30 @@
+<div class="distance">
+<a href="#/drama" class="btn btn-info" >Go Back</a>
+<div class="panel panel-default" ng-init="getKid()">
+  <div class="panel-heading">
+    <h3 class="panel-title">{{kid.title}}</h3>
+  </div>
+  <div class="panel-body">
+    <div class="row">
+      <div class="col-md-4">
+        <img src="{{kid.image_url}}">
+      </div>
+      <div class="col-md-8">
+        <p>{{kid.description}}</p>
+        <ul class="list-group">
+          <li class="list-group-item">Genre: Kids</li>
+          <li class="list-group-item">Author: {{kid.author}}</li>
+          <li class="list-group-item">Publisher: {{kid.publisher}}</li>
+          <li class="list-group-item">Pages: {{kid.pages}}</li>
+          <li class="list-group-item">Price: &#8377; {{kid.price}}</li>
+        </ul>
+        <a target="_blank" href="{{kid.buy_url}}" class="btn btn-primary">Buy on Amazon</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="pull-right">
+  <a href="#/kid/kid-edit/{{kid._id}}" class="btn btn-primary">Edit</a>
+</div>
+</div>

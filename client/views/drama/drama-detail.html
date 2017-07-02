@@ -1,0 +1,30 @@
+<div class="distance">
+<a href="#/drama" class="btn btn-info" >Go Back</a>
+<div class="panel panel-default" ng-init="getDrama()">
+  <div class="panel-heading">
+    <h3 class="panel-title">{{drama.title}}</h3>
+  </div>
+  <div class="panel-body">
+    <div class="row">
+      <div class="col-md-4">
+        <img src="{{drama.image_url}}">
+      </div>
+      <div class="col-md-8">
+        <p>{{drama.description}}</p>
+        <ul class="list-group">
+          <li class="list-group-item">Genre: Drama</li>
+          <li class="list-group-item">Author: {{drama.author}}</li>
+          <li class="list-group-item">Publisher: {{drama.publisher}}</li>
+          <li class="list-group-item">Pages: {{drama.pages}}</li>
+          <li class="list-group-item">Price: &#8377; {{drama.price}}</li>
+        </ul>
+        <a target="_blank" href="{{drama.buy_url}}" class="btn btn-primary">Buy on Amazon</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="pull-right">
+  <a href="#/drama/drama-edit/{{drama._id}}" class="btn btn-primary">Edit</a>
+</div>
+</div>

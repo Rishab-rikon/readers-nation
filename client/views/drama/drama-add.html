@@ -1,0 +1,53 @@
+<div class="distance">
+<a href="#/drama" class="btn btn-info">Go Back</a>
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Add a Drama you want us to view on our website</h3>
+    <div class="alert alert-warning alert-dismissible" role="alert">
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+    <strong>Warning!</strong> This Page will add books only to our Drama Section.
+    </div>
+  </div>
+  <div class="panel-body">
+    <div class="row">
+      <div class="col-md-12">
+      <form ng-submit="addDrama()">
+        <div class="form-group">
+          <label>Title</label>
+          <input type="text" class="form-control" ng-model="drama.title" placeholder="Title">
+        </div>
+        <div class="form-group">
+          <label>Author</label>
+          <input type="text" class="form-control" ng-model="drama.author" placeholder="Author">
+        </div>
+        <div class="form-group">
+          <label>Publisher</label>
+          <input type="text" class="form-control" ng-model="drama.publisher" placeholder="Publisher">
+        </div>
+        <div class="form-group">
+          <label>Pages</label>
+          <input type="text" class="form-control" ng-model="drama.pages" placeholder="Pages">
+        </div>
+        <div class="form-group">
+          <label>Description</label>
+          <textarea class="form-control" ng-model="drama.description" placeholder="Description"></textarea>
+        </div>
+        <div class="form-group">
+          <label>Image URL</label>
+          <input type="text" class="form-control" ng-model="drama.image_url" placeholder="Image URL">
+        </div>
+        <div class="form-group">
+          <label>Price</label>
+          <input type="text" class="form-control" ng-model="drama.price" placeholder="Price">
+        </div>
+        <div class="form-group">
+          <label>Buy URL</label>
+          <input type="text" class="form-control" ng-model="drama.buy_url" placeholder="Buy URL">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+    </div>
+    </div>
+  </div>
+</div>
+</div>
